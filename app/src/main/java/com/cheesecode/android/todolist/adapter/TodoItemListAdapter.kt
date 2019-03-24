@@ -8,15 +8,15 @@ import com.cheesecode.android.todolist.extensions.inflate
 import com.cheesecode.android.todolist.model.Todo
 
 
-class TodoItemListAdapter : androidx.recyclerview.widget.RecyclerView.Adapter<TodoItemListAdapter.TodoItemViewHolder>() {
+class TodoItemListAdapter: androidx.recyclerview.widget.RecyclerView.Adapter<TodoItemListAdapter.TodoItemViewHolder>() {
 
 
     private var items: List<Todo>? = null // Cached copy of items
 
-    class TodoItemViewHolder constructor(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
+     class TodoItemViewHolder constructor(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         val todoItemView: TextView = itemView.findViewById(R.id.textView)
 
-    }
+     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoItemViewHolder {
         val itemView = parent.inflate(R.layout.recyclerview_item)
